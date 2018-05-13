@@ -1,0 +1,15 @@
+<!-- Create the CKEditor container -->
+<form action="">
+    <textarea name="ckeditor_interface_{{name}}" id="ckeditor_{{name}}" row="10" cols="80">
+    {{value}}
+    </textarea>
+</form>
+
+<input type="hidden" name="{{name}}" class="hidden_input" id="ckeditor_{{name}}" value="{{value}}" {{#if readOnly}}readonly{{/if}}>
+
+<style>
+.focus, .cke_focus {
+    box-shadow: 0px 0px 0px 2px #3498DB;
+    border-color: white;
+}
+</style>
